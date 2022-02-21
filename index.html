@@ -18,7 +18,154 @@
   <script src="https://kit.fontawesome.com/27af558793.js" crossorigin="anonymous"></script>
 
 
-  <link rel="stylesheet" href="/style.css">
+  <style> 
+    html {
+    background-color: #fff1eb;
+    }
+    body {
+      background-color: transparent !important;
+      letter-spacing:1.5px;
+      margin: 20px 0px;
+    }
+    a{
+      text-decoration:none;
+    }
+    ul {
+      list-style: none;
+    }
+    .card, .card img {
+      border-radius: 10px!important;
+    }
+    .office,
+    .adobe,
+    .web {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-evenly;
+    }
+    .circle {
+      width: 75px;
+      height: 75px;
+      /*   border: 1px solid gray; */
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 10px 0;
+    }
+    .lv10 {
+      background: conic-gradient(royalblue 0, royalblue 36deg, gainsboro 36deg);
+    }
+    .lv20 {
+      background: conic-gradient(royalblue 0, royalblue 72deg, gainsboro 72deg);
+    }
+    .lv30 {
+      background: conic-gradient(royalblue 0, royalblue 108deg, gainsboro 108deg);
+    }
+    .lv40 {
+      background: conic-gradient(royalblue 0, royalblue 141deg, gainsboro 144deg);
+    }
+    .lv50 {
+      background: conic-gradient(royalblue 0, royalblue 180deg, gainsboro 180deg);
+    }
+    .lv60 {
+      background: conic-gradient(royalblue 0, royalblue 216deg, gainsboro 216deg);
+    }
+    .lv70 {
+      background: conic-gradient(royalblue 0, royalblue 252deg, gainsboro 252deg);
+    }
+    .lv80 {
+      background: conic-gradient(royalblue 0, royalblue 288deg, gainsboro 288deg);
+    }
+    
+    div.skill span {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      width: 55px;
+      height: 55px;
+      background: rgb(255 255 255);
+      border-radius: 50%;
+      overflow: hidden;
+    }
+    
+    .carousel-item p {
+      color: black;
+    }
+    
+    .tab-content {
+      width: 100%;
+    }
+    div.tlc .modal-body{
+      margin: 0px 40px 30px 40px;
+    }
+    .carousel-control-prev{
+      left:-80px;
+    }
+    .carousel-control-next{
+      right:-80px;
+    }
+    
+    .carousel-control-next-icon, .carousel-control-prev-icon{
+        height: 50px;
+        background-color: #ff6b7a;
+    }
+    .carousel-control-next-icon{
+        border-radius: 0 50px 50px 0;
+    }
+    
+    .carousel-control-prev-icon{
+        border-radius: 50px 0px 0px 50px;
+    }
+    .carousel-indicators{
+      bottom:-50px;
+    }
+    .carousel-indicators [data-bs-target]{
+      background-color:#ff6b7a;
+    }
+
+
+  @media (max-width: 1399.98px) {  
+    .carousel-control-prev{
+      left:-80px;
+    }
+    .carousel-control-next{
+      right:-80px;
+    }
+  }
+
+  .nav-pills .nav-link{
+    padding: 10%;
+  }
+  @media (max-width: 1199.98px) {  
+    .carousel-control-prev{
+      left:-70px;
+    }
+    .carousel-control-next{
+      right:-70px;
+    }
+  }
+
+  @media (max-width: 991.98px) {  
+    .carousel-control-prev{
+      left:-60px;
+    }
+    .carousel-control-next{
+      right:-60px;
+    }
+  }
+
+  @media (max-width: 767.98px) {  
+    .carousel-control-prev{
+      left:-50px;
+    }
+    .carousel-control-next{
+      right:-50px;
+    }
+  }
+  </style>
 </head>
 
 <body>
@@ -179,9 +326,18 @@
                         <div class="modal-body">
                           <ul class="link">
                             <li class="mb-2"><a href="https://i.imgur.com/SjcrW6e.jpg" target="_blank">App 功能Icon <i class="bi bi-hand-index-thumb-fill"></i></a></li>
-                            <li class="mb-2"><a href="https://i.imgur.com/eUHQRdR.jpg" target="_blank">YouTube頻道封面-1 <i class="bi bi-hand-index-thumb-fill"></i></a></li>
-                            <li class="mb-2"><a href="" target="_blank">YouTube頻道封面-2 <i class="bi bi-hand-index-thumb-fill"></i></a></li>
-                            <li><a href="" target="_blank">YouTube頻道封面-3 <i class="bi bi-hand-index-thumb-fill"></i></a></li>
+                            <li class="mb-2">YouTube頻道封面-1  
+                              <a href="https://i.imgur.com/YVjtaU0.jpg" target="_blank">原圖<i class="bi bi-hand-index-thumb-fill"></i></a>
+                              <a href="https://i.imgur.com/eUHQRdR.jpg" target="_blank">預覽<i class="bi bi-hand-index-thumb-fill"></i></a>
+                            </li>
+                            <li class="mb-2">YouTube頻道封面-2 
+                              <a href="https://i.imgur.com/RNdmtsF.jpg" target="_blank">原圖<i class="bi bi-hand-index-thumb-fill"></i></a>
+                              <a href="https://i.imgur.com/XqMxnUO.jpg" target="_blank">預覽<i class="bi bi-hand-index-thumb-fill"></i></a>
+                            </li>
+                            <li>YouTube頻道封面-3 
+                              <a href="https://i.imgur.com/wJcAYYh.jpg" target="_blank">原圖<i class="bi bi-hand-index-thumb-fill"></i></a>
+                              <a href="https://i.imgur.com/DTwhG17.png" target="_blank">預覽<i class="bi bi-hand-index-thumb-fill"></i></a>
+                            </li>
                           </ul>
                         </div>
                         <div class="modal-footer">
@@ -240,21 +396,21 @@
                         <div class="modal-body">
                           <!--  膠囊狀頁籤  -->
                           <div class="d-flex align-items-start justify-content-center">
-                            <div class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-                              <button class="nav-link active" id="v-pills-home-tab" data-bs-toggle="pill" data-bs-target="#v-pills-1" type="button" role="tab" aria-controls="v-pills-1" aria-selected="true">公司名片設計</button>
-                              <button class="nav-link" id="v-pills-2-tab" data-bs-toggle="pill" data-bs-target="#v-pills-2" type="button" role="tab" aria-controls="v-pills-2" aria-selected="false">FB 粉專行銷圖文-1</button>
-                              <button class="nav-link" id="v-pills-3-tab" data-bs-toggle="pill" data-bs-target="#v-pills-3" type="button" role="tab" aria-controls="v-pills-3" aria-selected="false">FB 粉專行銷圖文-2</button>
-                              <button class="nav-link" id="v-pills-4-tab" data-bs-toggle="pill" data-bs-target="#v-pills-4" type="button" role="tab" aria-controls="v-pills-4" aria-selected="false">FB 粉專行銷圖文-3</button>
-                              <button class="nav-link" id="v-pills-5-tab" data-bs-toggle="pill" data-bs-target="#v-pills-5" type="button" role="tab" aria-controls="v-pills-5" aria-selected="false">FB 粉專行銷圖文-4</button>
-                              <button class="nav-link" id="v-pills-6-tab" data-bs-toggle="pill" data-bs-target="#v-pills-6" type="button" role="tab" aria-controls="v-pills-6" aria-selected="false">FB 粉專行銷圖文-5</button>
+                            <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                              <button class="nav-link active" id="v-pills-home-tab" data-bs-toggle="pill" data-bs-target="#v-pills-1" type="button" role="tab" aria-controls="v-pills-1" aria-selected="true">名片設計</button>
+                              <button class="nav-link" id="v-pills-2-tab" data-bs-toggle="pill" data-bs-target="#v-pills-2" type="button" role="tab" aria-controls="v-pills-2" aria-selected="false">粉專圖文</button>
+                              <button class="nav-link" id="v-pills-3-tab" data-bs-toggle="pill" data-bs-target="#v-pills-3" type="button" role="tab" aria-controls="v-pills-3" aria-selected="false">粉專圖文</button>
+                              <button class="nav-link" id="v-pills-4-tab" data-bs-toggle="pill" data-bs-target="#v-pills-4" type="button" role="tab" aria-controls="v-pills-4" aria-selected="false">粉專圖文</button>
+                              <button class="nav-link" id="v-pills-5-tab" data-bs-toggle="pill" data-bs-target="#v-pills-5" type="button" role="tab" aria-controls="v-pills-5" aria-selected="false">粉專圖文</button>
+                              <button class="nav-link" id="v-pills-6-tab" data-bs-toggle="pill" data-bs-target="#v-pills-6" type="button" role="tab" aria-controls="v-pills-6" aria-selected="false">粉專圖文</button>
                             </div>
                             <div class="tab-content" id="v-pills-tabContent">
                               <div class="tab-pane fade show active" id="v-pills-1" role="tabpanel" aria-labelledby="v-pills-1-tab"><img src="https://i.imgur.com/TbuOiZY.jpg" alt="" class="w-75 d-block m-auto"></div>
-                              <div class="tab-pane fade" id="v-pills-2" role="tabpanel" aria-labelledby="v-pills-2-tab"><img src="https://i.imgur.com/ldxj9ak.jpg" alt="" class="w-50 d-block m-auto"></div>
-                              <div class="tab-pane fade" id="v-pills-3" role="tabpanel" aria-labelledby="v-pills-3-tab"><img src="https://i.imgur.com/Ox2boJR.jpg" alt="" class="w-50 d-block m-auto"></div>
-                              <div class="tab-pane fade" id="v-pills-4" role="tabpanel" aria-labelledby="v-pills-4-tab"><img src="https://i.imgur.com/3FBo2qC.jpg" alt="" class="w-50 d-block m-auto"></div>
-                              <div class="tab-pane fade" id="v-pills-5" role="tabpanel" aria-labelledby="v-pills-5-tab"><img src="https://i.imgur.com/OOuAYa1.png" alt="" class="w-50 d-block m-auto"></div>
-                              <div class="tab-pane fade" id="v-pills-6" role="tabpanel" aria-labelledby="v-pills-6-tab"><img src="https://i.imgur.com/5dimZ2Z.jpg" alt="" class="w-50 d-block m-auto"></div>
+                              <div class="tab-pane fade" id="v-pills-2" role="tabpanel" aria-labelledby="v-pills-2-tab"><img src="https://i.imgur.com/ldxj9ak.jpg" alt="" class="w-75 d-block m-auto"></div>
+                              <div class="tab-pane fade" id="v-pills-3" role="tabpanel" aria-labelledby="v-pills-3-tab"><img src="https://i.imgur.com/Ox2boJR.jpg" alt="" class="w-75 d-block m-auto"></div>
+                              <div class="tab-pane fade" id="v-pills-4" role="tabpanel" aria-labelledby="v-pills-4-tab"><img src="https://i.imgur.com/3FBo2qC.jpg" alt="" class="w-75 d-block m-auto"></div>
+                              <div class="tab-pane fade" id="v-pills-5" role="tabpanel" aria-labelledby="v-pills-5-tab"><img src="https://i.imgur.com/OOuAYa1.png" alt="" class="w-75 d-block m-auto"></div>
+                              <div class="tab-pane fade" id="v-pills-6" role="tabpanel" aria-labelledby="v-pills-6-tab"><img src="https://i.imgur.com/5dimZ2Z.jpg" alt="" class="w-75 d-block m-auto"></div>
                             </div>
                           </div>
                           <!--  膠囊狀頁籤  -->
